@@ -1,0 +1,31 @@
+TODO
+ - [DONE] partition into modules
+ - split off unit tests
+ - associativity on (+) is wrong! fix it.
+ - error messages
+ - line numbers
+ - pretty printer: omit unnecessary parens
+ - put (partial) type-checking into constructors
+   - can check that recursive subfields are blessed properly
+ - add another layer of indirection to tokenizer,
+   - between data & function put a hash
+     - key 'next' extracts next token
+     - key 'push' replaces tokens
+ - allow tokenizer to do multiline text
+ - document
+   - perl quirks I take advantage of
+     - => is a synonym of ','
+         EG: my ($x=>$s,$t) = @_;
+     - inline shifts
+     - shallow copy
+ - goal: present to ...
+    - 2 groups
+       1st: westside proggers
+       2nd: local perl user group
+    - mention other uses of HOFs
+       - curry, memoize
+       - HOP book
+    - fish for code review feedback
+ - try ad-hoc overloading based on how constructors are based
+    - showtok ==> show
+ - try metaprogramming to automate the coding of constructors/pattern matchers
